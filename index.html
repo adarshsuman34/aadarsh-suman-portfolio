@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsh Suman - Software Developer & AI Enthusiast</title>
+    <meta name="description" content="Portfolio of Aadarsh Suman, a first-year Computer Science Engineering student passionate about programming, AI development, and creating smarter digital solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for icons, alternative below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader Animation -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-text">Namaste World!</h1>
+            <svg viewBox="0 0 300 20" class="preloader-underline" preserveAspectRatio="none">
+                <path
+                    d="M 0,10 Q 75,0 150,10 Q 225,20 300,10"
+                    stroke="#00d2ff"
+                    stroke-width="3"
+                    fill="none"
+                    class="path-draw"
+                />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Background Elements for Aesthetics -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+    <div class="glow-bg glow-3"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">A.<span class="text-gradient">Suman</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="btn-primary-small">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero rain-hero">
+            <canvas id="rain-canvas"></canvas>
+            <div class="rain-overlay"></div>
+            
+            <div class="hero-content reveal rain-content">
+                <h1 id="scramble-title" class="hero-title scramble-text">AADARSH SUMAN</h1>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+                
+                <div class="social-links-hero">
+                    <a href="https://linkedin.com/in/aadarsh-suman" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/adarshsuman34" target="_blank" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="mailto:aadarshsuman4275@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-heading reveal">
+                <h2>About Me</h2>
+                <div class="heading-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p>I'm a first-year <strong>Computer Science Engineering student</strong> passionate about programming and artificial intelligence. Currently, I'm mastering <span class="highlight">C</span> and <span class="highlight">Python</span> and enjoy exploring how technology can solve real-world problems.</p>
+                    <p>Within my first month of college, I participated in four hackathons, gaining hands-on experience in problem-solving, teamwork, and creative coding.</p>
+                    <p>I'm especially interested in <strong>AI development</strong> and <strong>automation tools</strong> that make digital processes smarter and more efficient. I'm always open to learning, collaborating, and building innovative projects!</p>
+                </div>
+                
+                <div class="stats-grid reveal-right">
+                    <div class="stat-card">
+                        <h3 class="stat-number">4+</h3>
+                        <p class="stat-text">Hackathons</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number">2</h3>
+                        <p class="stat-text">Core Languages</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-text">Certifications</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number">100%</h3>
+                        <p class="stat-text">Dedication</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-heading reveal">
+                <h2>Top Skills</h2>
+                <div class="heading-line"></div>
+            </div>
+            
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>Scripting, Automation, AI Integration</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>C Language</h3>
+                    <p>Core programming, Algorithms, Data Structures</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-google"></i></div>
+                    <h3>Google Cloud</h3>
+                    <p>Cloud infrastructure & Deployment</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Google Workspace</h3>
+                    <p>Collaboration & Productivity APIs</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Google AI Studio</h3>
+                    <p>LLMs, Prompt Engineering, Implementation</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Automation</h3>
+                    <p>Workflow optimization, Task automation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience" class="section bg-alt">
+            <div class="section-heading reveal">
+                <h2>Experience & Education</h2>
+                <div class="heading-line"></div>
+            </div>
+            
+            <div class="timeline-container">
+                <!-- Experience -->
+                <div class="timeline-column reveal-left">
+                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Experience</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Oct 2025 - Nov 2025</span>
+                            <h4 class="timeline-title">AI Automation Intern</h4>
+                            <p class="timeline-org">Career Craft Cafe, Ludhiana</p>
+                            <p class="timeline-desc">Focused on developing automated workflows and integrating AI solutions to optimize organizational processes and improve efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="timeline-column reveal-right">
+                    <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Aug 2025 - Present</span>
+                            <h4 class="timeline-title">B.E. in Computer Science</h4>
+                            <p class="timeline-org">I.K. Gujral Punjab Technical University (IKGPTU)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">May 2023 - Apr 2025</span>
+                            <h4 class="timeline-title">Intermediate</h4>
+                            <p class="timeline-org">Bihar School Examination Board (BSEB)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">May 2022 - May 2023</span>
+                            <h4 class="timeline-title">Secondary</h4>
+                            <p class="timeline-org">Bihar School Examination Board (BSEB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="section-heading reveal">
+                <h2>Certifications</h2>
+                <div class="heading-line"></div>
+            </div>
+            
+            <div class="certs-grid reveal">
+                <div class="cert-card" data-tilt>
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Google Certifications</h3>
+                    <p class="cert-desc">Multiple credentials validation of proficiency in Google cloud and workflow ecosystems.</p>
+                </div>
+                 <div class="cert-card" data-tilt>
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-title">Certificate of Participation</h3>
+                    <p class="cert-desc">Recognized for active involvement in multiple hackathons within the first month of college.</p>
+                </div>
+                <div class="cert-card" data-tilt>
+                    <div class="cert-icon"><i class="fas fa-star"></i></div>
+                    <h3 class="cert-title">Google Cloud</h3>
+                    <p class="cert-desc">Certified understanding of cloud deployment, scaling and essential services.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-heading reveal">
+                <h2>Get In Touch</h2>
+                <div class="heading-line"></div>
+            </div>
+            
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <h3>Let's build something amazing together</h3>
+                    <p>I'm currently looking for new opportunities, collaborations, and projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:aadarshsuman4275@gmail.com">aadarshsuman4275@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <a href="https://linkedin.com/in/aadarsh-suman" target="_blank">linkedin.com/in/aadarsh-suman</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/adarshsuman34" target="_blank">github.com/adarshsuman34</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Ludhiana, Punjab, India</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/ajax/aadarshsuman4275@gmail.com" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New message from your Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">A.<span class="text-gradient">Suman</span></a>
+            <p>Designed and built with passion &middot; &copy; <span id="year"></span></p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/aadarsh-suman" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/adarshsuman34" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:aadarshsuman4275@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div class="message">
+                <span class="text-1">Success!</span>
+                <span class="text-2">Mail has been sent. He will connect with you soon.</span>
+            </div>
+        </div>
+        <i class="fas fa-times close-toast"></i>
+        <div class="progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
